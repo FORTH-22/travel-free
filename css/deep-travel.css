@@ -1,0 +1,215 @@
+/* 深度旅行开始 */
+.deep-travel {
+    height: 650px;
+    padding: 20px;
+    background-image: linear-gradient( 135deg, #393223 10%, #020911 100%);
+  }
+  
+  .deep-travel .center-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .deep-travel .title-introduction {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .deep-travel .title-introduction .left-title {
+    flex: 1;
+  }
+  
+  .deep-travel .title-introduction .left-title h2 {
+    color: white;
+    font-size: 35px;
+  }
+  
+  .deep-travel .title-introduction .left-title {
+    position: relative;
+  }
+  
+  .deep-travel .title-introduction .left-title em {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    color: #9e9e9e;
+    font-size: 14px;
+  }
+  
+  .deep-travel .title-introduction .right-title {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end
+  }
+  
+  .deep-travel .title-introduction .right-title > li {
+    margin-left: 40px;
+    height: 100%;
+    width: 200px;
+    /* padding: 10px; */
+  }
+  
+  .deep-travel .title-introduction .right-title > li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #9e9e9e;
+    /* border: 2px solid red; */
+  }
+  
+  .deep-travel .title-introduction .right-title > li:hover a {
+    color: #20bd9a;
+    border-bottom: 4px solid #20bd9a;
+  }
+  
+  
+  .deep-travel .center-wrap .pro-display {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+  }
+  
+  .deep-travel .center-wrap .pro-display > li {
+    overflow: hidden;
+    width: 22%;
+    margin-bottom: 30px;
+    /* padding: 20px; */
+    height: 265px;
+    /* height: 100%; */
+  }
+  
+  .deep-travel .center-wrap .pro-display > li.big-pic-box {
+    width: 48%;
+  }
+  
+  .deep-travel .center-wrap .pro-display > li img {
+    width: 100%;
+    transition: transform .4s ease 0s;
+  }
+  
+  .deep-travel .center-wrap .pro-display > li p {
+    padding: 18px;
+    font-size: 13px;
+    color: #9e9e9e;
+  }
+  
+  .deep-travel .center-wrap .pro-display > li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+  }
+  
+  .deep-travel .center-wrap .pro-display > li:hover img {
+    transform: scale(1.2);
+  }
+  
+  .deep-travel .center-wrap .pro-display > li.big-pic-box img {
+    transform: none;
+  }
+  
+  /* big-pic-box 动画 */
+  
+  .deep-travel .center-wrap .pro-display .big-pic-box .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    /* 总透明度 */
+    opacity: 0;
+    /* 过渡 */
+    transition: opacity .8s ease 0s;
+  }
+  
+  .deep-travel .center-wrap .pro-display .big-pic-box:hover .mask {
+    opacity: 1;
+  }
+  
+  
+  .deep-travel .center-wrap .pro-display .big-pic-box {
+    position: relative;
+  }
+  
+  .deep-travel .center-wrap .pro-display .big-pic-box .circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -100px;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: top .8s ease 0s;
+  }
+  
+  .deep-travel .center-wrap .pro-display .big-pic-box .circle p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .deep-travel .center-wrap .pro-display .big-pic-box:hover .circle {
+    top: 40%;
+  }
+  
+  .deep-travel .center-wrap .pro-display .big-pic-box .word {
+    position: absolute;
+    bottom: -25px;
+    left: 25px;
+    color: white;
+    transition: bottom .8s ease 0s;
+  }
+  
+  .deep-travel .center-wrap .pro-display .big-pic-box:hover .word {
+    bottom: 15px;
+  }
+  
+  .deep-travel .center-wrap .pro-display .more-info {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #41D8E9 0%, #3685EA 98%);
+  }
+  
+  
+  .deep-travel .center-wrap .pro-display .more-info p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .deep-travel .center-wrap .pro-display .more-info .iconfont {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  .deep-travel .center-wrap .pro-display .more-info ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .deep-travel .center-wrap .pro-display .more-info ul li a {
+    color: white;
+  }
+  
+  .deep-travel .pro-display .more-info:hover .iconfont {
+    animation: ud .4s ease 0s infinite alternate;
+  }
+  
+  @keyframes ud{
+    from {
+        transform: translateY(-5px);
+    }
+    to {
+        transform: translateY(5px);
+    }
+  }

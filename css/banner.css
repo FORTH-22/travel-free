@@ -1,0 +1,85 @@
+/* banner开始 */
+.main-banner {
+  height: 600px;
+  position: relative;
+}
+
+.main-banner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* banner-nav */
+.main-banner .banner-nav {
+  position: absolute;
+  left: 12%;
+  top: 0;
+  height: 100%;
+  width: 12%;
+  z-index: 999;
+}
+
+.main-banner .banner-nav .banner-nav-ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.53);
+}
+
+.main-banner .banner-nav .banner-nav-ul > li {
+  border-bottom: 2px solid #9e9e9e;
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main-banner .banner-nav .banner-nav-ul > li span {
+  color: rgba(50, 200, 180);
+}
+
+.main-banner .banner-nav > ul > li.current {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+/* banner-nav的二级菜单 */
+.main-banner .banner-nav .menu-container {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  left: 100%;
+  top: 0;
+}
+
+.main-banner .banner-nav .menu-container .son-menu {
+  /* 开始是隐藏的 */
+  display: none;
+  background-color: rgba(0, 0, 0, 0.53);
+  padding: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.main-banner .banner-nav .menu-container .son-menu.current {
+  display: block;
+}
+
+.main-banner .banner-nav .menu-container .son-menu dl {
+  margin-bottom: 20px;
+}
+
+.main-banner .banner-nav .menu-container .son-menu dl dt {
+  margin-bottom: 8px;
+  color: white;
+}
+
+.main-banner .banner-nav .menu-container .son-menu dl > dd a {
+  font-size: 14px;
+  color: white;
+}

@@ -1,0 +1,102 @@
+/* 顶部导航开始 */
+.top-nav {
+  /* display: flex; */
+  /* min-width: 1152px; */
+  height: 60px;
+  line-height: 40px;
+  background-color: #090723;
+  /* border: 2px solid red; */
+}
+
+.top-nav .center-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+/* 导航左半边 */
+
+.top-nav .left-links a {
+  color: rgba(216, 199, 199, 0.5);
+}
+
+.top-nav .left-links a:hover {
+  color: white;
+}
+
+.top-nav .left-links > ul {
+  display: flex;
+}
+.top-nav .left-links > ul > li {
+  margin-right: 30px;
+  font-size: 14px;
+  padding: 6px 6px;
+}
+
+.top-nav .left-links li.have-menu {
+  position: relative;
+}
+
+.top-nav .left-links li.have-menu .son-menu {
+  position: absolute;
+  top: 50px;
+  left: -18px;
+  min-width: 100px;
+  /* width: 130px; */
+  background-color: #090723;
+  box-shadow: 0 0 4px 0 #6973b3;
+  border-radius: 6px 6px 4px 4px;
+  z-index: 9999;  /*这里 与 下面banner 的 z-index冲突 导致 航的二级菜单出现快速消失的bug  所以只要让这里的z-index大于 下面的banner-nav即可*/
+  display: none;
+}
+
+/* .top-nav .left-links li.have-menu .son-menu a {
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.5);
+} */
+
+.top-nav .left-links li.have-menu .son-menu a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.top-nav .left-links li.have-menu:hover .son-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 导航右半边 */
+.top-nav .right-links {
+  /* width: 40%; */
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+}
+
+.top-nav .right-links a {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 24px;
+  font-size: 14px;
+}
+
+.top-nav .right-links a:hover {
+  color: white;
+}
+
+.top-nav .right-links .right-links-input {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 15px;
+  padding: 0 35px 0 17px;
+  margin-right: 20px;
+  margin-top: 8px;
+  border: 1px solid rgba(255, 255, 255, 5);
+  background: 0 0;
+}
